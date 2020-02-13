@@ -268,7 +268,7 @@ open class PhoneNumberTextField: UITextField, UITextFieldDelegate {
             let firstSpaceIndex = example.firstIndex(where: { $0 == " " }) ?? example.startIndex
 
             ph.addAttribute(.foregroundColor, value: UIColor.white, range: NSRange(..<firstSpaceIndex, in: example))
-            ph.addAttribute(.foregroundColor, value: UIColor.white, range: NSRange(firstSpaceIndex..., in: example))
+            ph.addAttribute(.foregroundColor, value: UIColor.gray, range: NSRange(firstSpaceIndex..., in: example))
         }
         #endif
         self.attributedPlaceholder = ph
